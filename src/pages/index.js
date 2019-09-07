@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Header />
     <SEO title="Home" />
 
-    <h1 className="my-4">Asim Volley Ball</h1>
+    <h1 className="my-4 text-primary">Asim Volley Ball</h1>
 
     <div className="row">
       <div className="col-lg-4 mb-4">

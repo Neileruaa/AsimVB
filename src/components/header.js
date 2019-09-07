@@ -1,6 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import volleyBan1 from '../images/volley_banniere_attaque.jpg'
+import volleyBan2 from '../images/volley_banniere_pipe.jpg'
+import volleyBan3 from '../images/volley_banniere_ball.jpg'
 
 const Header = ({ siteTitle }) => (
   <header className="mx-0">
@@ -11,19 +14,19 @@ const Header = ({ siteTitle }) => (
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div className="carousel-inner" role="listbox">
-        <div className="carousel-item active" style={{ backgroundImage: `url(${'http://placehold.it/1900x1080'})` }}>
+        <div className="carousel-item active" style={{ backgroundImage: `url(${volleyBan1})` }}>
           <div className="carousel-caption d-none d-md-block">
             <h3>First Slide</h3>
             <p>This is a description for the first slide.</p>
           </div>
         </div>
-        <div className="carousel-item" style={{ backgroundImage: `url(${'http://placehold.it/1900x1080'})` }}>
+        <div className="carousel-item" style={{ backgroundImage: `url(${volleyBan2})` }}>
           <div className="carousel-caption d-none d-md-block">
             <h3>Second Slide</h3>
             <p>This is a description for the second slide.</p>
           </div>
         </div>
-        <div className="carousel-item" style={{ backgroundImage: `url(${'http://placehold.it/1900x1080'})` }}>
+        <div className="carousel-item" style={{ backgroundImage: `url(${volleyBan3})` }}>
           <div className="carousel-caption d-none d-md-block">
             <h3>Third Slide</h3>
             <p>This is a description for the third slide.</p>

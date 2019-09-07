@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-import 'bootstrap/dist/css/bootstrap.css'
 import './src/styles/global.css'
+import './src/scss/custom.scss'
 import 'jquery/dist/jquery'
 import 'bootstrap/dist/js/bootstrap.bundle'

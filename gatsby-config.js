@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `AsimVB`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `test`,
+    description: `Bienvenue sur le site de l'Association Sportive d'Illzach-Modenheim. Venez nous rejoindre, nous vous proposerons bonne humeur et bonne ambiance !`,
     author: `@gatsbyjs`,
     siteUrl: `https://asimvolleyball.ml`,
   },
@@ -16,6 +16,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
