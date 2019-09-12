@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: Neileruaa/AsimVB
+  name: git-gateway
+  branch: master
 media_folder: static/assets
 public_folder: assets
 collections:
