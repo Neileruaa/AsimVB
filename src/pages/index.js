@@ -18,11 +18,11 @@ const IndexPage = (props) => {
 
             <div className="row">
                 {props.data.allFile.edges.map((item, index) => (
-                        <div className="col-lg-4 mb-4">
+                        <div key={index} className="col-lg-4 mb-4">
                             <div className="card h-100">
                                 <h4 className="card-header">{item.node.childMarkdownRemark.frontmatter.title}</h4>
                                 <div className="card-body">
-                                    <p className="card-text" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}></p>
+                                    <p className="card-text" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}/>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#" className="btn btn-primary">Learn More</a>
