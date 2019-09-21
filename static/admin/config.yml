@@ -12,5 +12,6 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: description, label: Description, widget: text, default: "Description de l'article"}
       - { name: thumbnail, label: Image Vignette, widget: image, default: "/assets/volley_banniere_ball.jpg", allow_multiple: false }
       - { name: body, label: Body, widget: markdown }
