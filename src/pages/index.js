@@ -22,7 +22,7 @@ const IndexPage = (props) => {
                             <div className="card h-100">
                                 <h4 className="card-header" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.frontmatter.title}}/>
                                 <div className="card-body">
-                                    <p className="card-text" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}/>
+                                    <div className="card-text" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}/>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#" className="btn btn-primary">Learn More</a>
