@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 
 const IndexPage = (props) => {
+    console.log(props.data.allFile.edges[0])
     return (
         <Layout>
             <Header/>
@@ -16,26 +17,26 @@ const IndexPage = (props) => {
 
             <h1 className="my-4 text-primary">Asim Volley Ball</h1>
 
+            <h2>Liste des derniers articles</h2>
+
             <div className="row">
                 {props.data.allFile.edges.map((item, index) => (
-                        <div key={index} className="col-lg-4 mb-4">
+                        <div key={index} className="col-lg-4 col-sm-6 portfolio-item">
                             <div className="card h-100">
-                                <h4 className="card-header" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.frontmatter.title}}/>
+                                <img className="card-img-top" src={item.node.childMarkdownRemark.frontmatter.thumbnail} />
                                 <div className="card-body">
-                                    <div className="card-text" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}/>
-                                </div>
-                                <div className="card-footer">
-                                    <a href="#" className="btn btn-primary">Learn More</a>
+                                    <h4 className="card-title">
+                                        <a href="#" dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.frontmatter.title}}/>
+                                    </h4>
+                                    <div className="card-text"
+                                         dangerouslySetInnerHTML={{__html: item.node.childMarkdownRemark.html}}/>
                                 </div>
                             </div>
                         </div>
-
                     )
                 )}
             </div>
 
-
-            <h2>Portfolio Heading</h2>
 
             <div className="row">
                 <div className="col-lg-4 col-sm-6 portfolio-item">
@@ -124,27 +125,25 @@ const IndexPage = (props) => {
 }
 
 export const query = graphql`
-  query {
-  
+query {
     allFile (
         filter: {
-          childMarkdownRemark: {
-            html: {ne: null}
-          }
+            childMarkdownRemark: { html: {ne: null}}
         }
-      ) {
+    ) {
         edges {
-          node {
-            childMarkdownRemark{
-              frontmatter{
-                title
-              }
-              html
+            node {
+                childMarkdownRemark{
+                    frontmatter{
+                        title
+                        thumbnail
+                    }
+                    html
+                }
             }
-          }
         }
-      }
-  } 
+    }
+}
 `
 
 export default IndexPage

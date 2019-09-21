@@ -15,6 +15,7 @@ export default function Template({ data }) {
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
+                <img src={frontmatter.thumbnail} />
             </div>
         </div>
     )
@@ -26,6 +27,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        thumbnail
       }
     }
   }
