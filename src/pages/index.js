@@ -39,23 +39,22 @@ const IndexPage = (props) => {
 
             <div className="row">
                 <div className="col-lg-6">
-                    <h2>Modern Business Features</h2>
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
+                    <h2>Qui somme nous ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloremque esse fugit id labore necessitatibus nostrum quia repellendus tenetur ullam! Aspernatur fugit illum in itaque nisi non quaerat rerum voluptatem.</p>
                     <ul>
                         <li>
-                            <strong>Bootstrap v4</strong>
+                            <strong>Plaisir</strong>
                         </li>
-                        <li>jQuery</li>
-                        <li>Font Awesome</li>
-                        <li>Working contact form with validation</li>
-                        <li>Unstyled page elements for easy customization</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Compétition</li>
+                        <li>École de volley</li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id
                         reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis
                         quia dolorum ducimus unde.</p>
                 </div>
                 <div className="col-lg-6">
-                    <img className="img-fluid rounded" src="http://placehold.it/700x450" alt=""/>
+                    <img className="img-fluid rounded" src="/assets/volley_banniere_ball.jpg" alt=""/>
                 </div>
             </div>
 
@@ -63,11 +62,10 @@ const IndexPage = (props) => {
 
             <div className="row mb-4">
                 <div className="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum
-                        deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <p>Vous souhaitez prendre contact ou demander des renseignements complémentaires n'hésitez pas à nous envoyer un email !</p>
                 </div>
                 <div className="col-md-4">
-                    <a className="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+                    <a className="btn btn-lg btn-secondary btn-block" href="#">Prendre contact</a>
                 </div>
             </div>
 
@@ -87,6 +85,7 @@ query {
         filter: {
             childMarkdownRemark: { html: {ne: null}}
         }
+        limit: 6
     ) {
         edges {
             node {
