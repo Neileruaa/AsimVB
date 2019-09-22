@@ -12,7 +12,7 @@ const SecondPage = () => (
             <p className="text-minor">Bienvenue sur la page contact de l'ASIM VolleyBall. N'hésitez pas à nous envoyer un message </p>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <p>
                 <label>Your Name: <input type="text" name="name" /></label>
             </p>
