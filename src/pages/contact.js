@@ -19,8 +19,8 @@ const SecondPage = () => (
             data-netlify-honeypot="bot-field"
         >
             <input type="hidden" name="bot-field"/>
-            <input type="email" name="userEmail" value="Votre email"/>
-            <input type="submit" value="Send"/>
+            <input type="email" name="userEmail" id="userEmail" placeholder="Votre email"/>
+            <input type="submit" name="validationSubmit" id="validationSubmit" value="Send"/>
         </form>
 
 
