@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Navbar = ({ siteTitle }) => (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
             <Link
                 to="/"

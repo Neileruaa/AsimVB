@@ -6,4 +6,8 @@ $theme-colors: (
 
 $body-bg: #EAEAEA;
 
-@import "../../node_modules/bootstrap/scss/bootstrap"
+$jumbotron-color: rgba(255, 97, 6, 0.83);
+$jumbotron-bg: rgba(34, 25, 16, 0.09);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
