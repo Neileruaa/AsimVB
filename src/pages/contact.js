@@ -17,19 +17,19 @@ const SecondPage = () => (
             <div className="form-group row">
                 <label htmlFor="userName" className="col-sm-2 col-form-label">Votre nom: </label>
                 <div className="col-sm-10">
-                    <input type="text" name="name" id="userName" className="form-control"/>
+                    <input type="text" name="name" id="userName" className="form-control" required/>
                 </div>
             </div>
             <div className="form-group row">
                 <label htmlFor="userEmail" className="col-sm-2 col-form-label">Votre email: </label>
                 <div className="col-sm-10">
-                    <input type="email" name="email" id="userEmail" className="form-control"/>
+                    <input type="email" name="email" id="userEmail" className="form-control" required/>
                 </div>
             </div>
             <div className="form-group row">
                 <label htmlFor="userRole" className="col-sm-2 col-form-label">Vous êtes ?</label>
                 <div className="col-sm-10">
-                    <select className="form-control" id="userRole" name="role">
+                    <select className="form-control" id="userRole" name="role" required>
                         <option value="membre">Membre du club</option>
                         <option value="externe">Extérieur</option>
                         <option value="autre">Autre</option>
@@ -39,7 +39,7 @@ const SecondPage = () => (
             <div className="form-group row">
                 <label htmlFor="userMessage" className="col-sm-2 col-form-label">Votre message:</label>
                 <div className="col-sm-10">
-                    <textarea name="message" id="userMessage" className="form-control" rows="10"/>
+                    <textarea name="message" id="userMessage" className="form-control" rows="10" required/>
                 </div>
             </div>
             <div className="form-group row">
