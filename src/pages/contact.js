@@ -14,24 +14,39 @@ const SecondPage = () => (
 
         <form name="contact" action="/" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="bot-field"/>
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                </select></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
+            <div className="form-group row">
+                <label htmlFor="userName" className="col-sm-2 col-form-label">Votre nom: </label>
+                <div className="col-sm-10">
+                    <input type="text" name="name" id="userName" className="form-control"/>
+                </div>
+            </div>
+            <div className="form-group row">
+                <label htmlFor="userEmail" className="col-sm-2 col-form-label">Votre email: </label>
+                <div className="col-sm-10">
+                    <input type="email" name="email" id="userEmail" className="form-control"/>
+                </div>
+            </div>
+            <div className="form-group row">
+                <label htmlFor="userRole" className="col-sm-2 col-form-label">Vous êtes ?</label>
+                <div className="col-sm-10">
+                    <select className="form-control" id="userRole" name="role">
+                        <option value="membre">Membre du club</option>
+                        <option value="externe">Extérieur</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div className="form-group row">
+                <label htmlFor="userMessage" className="col-sm-2 col-form-label">Votre message:</label>
+                <div className="col-sm-10">
+                    <textarea name="message" id="userMessage" className="form-control" rows="10"/>
+                </div>
+            </div>
+            <div className="form-group row">
+                <div className="col-sm-12 text-center">
+                    <button type="submit" className="btn btn-lg btn-success">Envoyer</button>
+                </div>
+            </div>
         </form>
 
 
