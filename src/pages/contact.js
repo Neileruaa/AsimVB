@@ -20,7 +20,7 @@ const SecondPage = () => (
         >
             <input type="hidden" name="bot-field"/>
             <input type="text" name="nom" value="Votre nom"/>
-            <button>Send</button>
+            <input type="submit" value="Send"></input>
         </form>
 
 
