@@ -16,9 +16,7 @@ const SecondPage = () => (
             method="post"
             name="contact"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
         >
-            <input type="hidden" name="bot-field"/>
             <input type="text" name="nom" value="Votre nom"/>
             <input type="submit" value="Send"></input>
         </form>
