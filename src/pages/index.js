@@ -13,7 +13,8 @@ const IndexPage = (props) => {
     return (
         <Layout>
             <Header/>
-            <SEO title="Home"/>
+            <SEO title="Asim Volley: Accueil" description="Page d'accueil du site ASIM VOLLEY BALL. On y retrouve les derniers
+            articles ainsi que les informations principales. "/>
 
             <h1 className="my-4 text-primary">Asim Volley Ball</h1>
 
