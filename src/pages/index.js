@@ -12,7 +12,7 @@ class IndexPage extends Component{
     constructor(props) {
         super(props);
     }
-    componentDidMount() {
+    componentWillMount() {
         if(typeof window !== 'undefined'){
             const WOW = require('wow.js');
             const wow = new WOW();
