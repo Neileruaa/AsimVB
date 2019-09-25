@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Link} from "gatsby"
 import {graphql} from "gatsby"
-import WOW from "wow.js"
+
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -14,6 +14,7 @@ class IndexPage extends Component{
     }
     componentDidMount() {
         if(typeof window !== 'undefined'){
+            const WOW = require('wow.js');
             const wow = new WOW();
             wow.init();
         }
