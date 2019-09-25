@@ -25,12 +25,12 @@ class IndexPage extends Component{
             articles ainsi que les informations principales. "/>
 
                 <h1 className="my-4 text-primary">Asim Volley Ball</h1>
-                
+
                 <h2>Liste des derniers articles</h2>
 
                 <div className="row">
                     {this.props.data.allFile.edges.map((item, index) => (
-                            <div key={index} className="col-lg-4 col-sm-6 portfolio-item">
+                            <div key={index} className="col-lg-4 col-sm-6 portfolio-item wow zoomIn" data-wow-delay={"0." + index * 2+"s"} data-wow-duration={"0.9s"}>
                                 <div className="card h-100">
                                     <Link to={item.node.childMarkdownRemark.frontmatter.path}><img className="card-img-top" src={item.node.childMarkdownRemark.frontmatter.thumbnail} /></Link>
                                     <div className="card-body">
@@ -47,7 +47,7 @@ class IndexPage extends Component{
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 wow slideInRight" data-wow-delay={"0.1s"}>
                         <h2>Qui somme nous ?</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloremque esse fugit id labore necessitatibus nostrum quia repellendus tenetur ullam! Aspernatur fugit illum in itaque nisi non quaerat rerum voluptatem.</p>
                         <ul>
